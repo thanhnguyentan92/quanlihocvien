@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Nhân Viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>QUẢN LÝ NHÂN VIÊN </h1>
+    <div class="form-container">
+        <form id="employeeForm">
+            <div class="form-group">
+                <label for="id">Mã Nhân Viên:</label>
+                <input type="text" id="id" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Tên Nhân Viên:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Ngày Sinh:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Giới Tính:</label>
+                <select id="gender" required>
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa Chỉ:</label>
+                <input type="text" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="idcard">Số CMT:</label>
+                <input type="text" id="idcard" required>
+            </div>
+            <div class="form-group">
+                <label for="job">Công Việc:</label>
+                <input type="text" id="job" required>
+            </div>
+            <div class="form-group">
+                <label for="note">Ghi Chú:</label>
+                <input type="text" id="note">
+            </div>
+            <div class="form-group">
+                <label for="salary">Lương/Tháng:</label>
+                <input type="number" id="salary" required>
+            </div>
+            <div class="buttons">
+                <button type="submit">Thêm</button>
+                <button type="button" onclick="resetForm()">Hủy</button>
+            </div>
+        </form>
+    </div>
+    <div class="table-container">
+        <table id="employeeTable">
+            <thead>
+            <tr>
+                <th>Mã Nhân Viên</th>
+                <th>Tên Nhân Viên</th>
+                <th>Ngày Sinh</th>
+                <th>Giới Tính</th>
+                <th>Địa Chỉ</th>
+                <th>Số CMT</th>
+                <th>Công Việc</th>
+                <th>Ghi Chú</th>
+                <th>Lương/Tháng</th>
+                <th>Hành Động</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="quanlinhanvien.js"></script>
+</body>
+</html>
